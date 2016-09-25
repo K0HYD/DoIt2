@@ -13,6 +13,7 @@
 		DD3A9F741D96E96B007ECF72 /* DoIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD3A9F721D96E96B007ECF72 /* DoIt.xcdatamodeld */; };
 		DD3A9F761D96E96B007ECF72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3A9F751D96E96B007ECF72 /* Assets.xcassets */; };
 		DD3A9F791D96E96B007ECF72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3A9F771D96E96B007ECF72 /* LaunchScreen.storyboard */; };
+		DD3A9F811D97076D007ECF72 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3A9F801D97076D007ECF72 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DD3A9F751D96E96B007ECF72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD3A9F781D96E96B007ECF72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD3A9F7A1D96E96B007ECF72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3A9F801D97076D007ECF72 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				DD3A9F6B1D96E96B007ECF72 /* AppDelegate.swift */,
 				DD3A9F6D1D96E96B007ECF72 /* ViewController.swift */,
 				DD3A9F6F1D96E96B007ECF72 /* Main.storyboard */,
+				DD3A9F801D97076D007ECF72 /* Task.swift */,
 				DD3A9F751D96E96B007ECF72 /* Assets.xcassets */,
 				DD3A9F771D96E96B007ECF72 /* LaunchScreen.storyboard */,
 				DD3A9F7A1D96E96B007ECF72 /* Info.plist */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD3A9F811D97076D007ECF72 /* Task.swift in Sources */,
 				DD3A9F741D96E96B007ECF72 /* DoIt.xcdatamodeld in Sources */,
 				DD3A9F6E1D96E96B007ECF72 /* ViewController.swift in Sources */,
 				DD3A9F6C1D96E96B007ECF72 /* AppDelegate.swift in Sources */,
