@@ -44,7 +44,7 @@
                     <connections>
                         <outlet property="tableView" destination="pqG-od-e69" id="DUn-dg-d0j"/>
                         <segue destination="vW3-Se-7YI" kind="show" identifier="addSegue" id="dQl-6Y-C2e"/>
-                        <segue destination="RQI-TP-srM" kind="show" identifier="selectTaskSeque" id="Q2q-tj-7vV"/>
+                        <segue destination="RQI-TP-srM" kind="show" identifier="selectTaskSegue" id="Q2q-tj-7vV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cy-GX-Jzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1321" y="115"/>
+            <point key="canvasLocation" x="1407" y="115"/>
         </scene>
         <!--Complete Task View Controller-->
         <scene sceneID="Bpa-Cs-hIO">
