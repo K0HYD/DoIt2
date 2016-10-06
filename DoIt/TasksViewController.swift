@@ -14,7 +14,7 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     var tasks : [Task] = []
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +31,15 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(tasks.count)
         return tasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         let task = tasks[indexPath.row]
+        
+        print (task.name, task.important)
         if task.important {
             cell.textLabel?.text = "❗️\(task.name!)"
         } else {
@@ -47,7 +50,6 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-
         let task = tasks[indexPath.row]
         performSegue(withIdentifier: "selectTaskSegue", sender: task)
     }
@@ -69,13 +71,15 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "selectTaskSeque" {
-            let nextVC = segue.destination as! CompleteTaskViewController
-            nextVC.task = sender as? Task
-
+        if segue.identifier == "addSegue" {
+            let nextVC = segue.destination as! CreateTaskViewController;
+            nextVC.previousVC = self
+            
+            if segue.identifier == "selectTaskSegue" {
+                let nextVC = segue.destination as! CompleteTaskViewController
+                nextVC.task = sender as? Task
+                
+            }
         }
-    }
-    
+        
 }
-
-
