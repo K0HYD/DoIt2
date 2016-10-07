@@ -3,17 +3,17 @@
 //  DoIt
 //
 //  Created by Dale Puckett on 9/25/16.
-//  Copyright © 2016 k0hyd. All rights reserved.
+//  Copyright © 2016 k0hyd. All rights reserved
 //
 
 import UIKit
 
 class CreateTaskViewController: UIViewController {
-    
-    @IBOutlet weak var taskNameTextField: UITextField!
+
     @IBOutlet weak var importantSwitch: UISwitch!
+    @IBOutlet weak var taskNameTextField: UITextField!
     
-    var tasks = Task()
+// var tasks = Task()
     
     override func viewDidLoad() {
         super.viewDidLoad()

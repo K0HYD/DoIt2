@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TasksViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -70,16 +70,9 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "addSegue" {
-            let nextVC = segue.destination as! CreateTaskViewController;
-            nextVC.previousVC = self
-            
-            if segue.identifier == "selectTaskSegue" {
-                let nextVC = segue.destination as! CompleteTaskViewController
-                nextVC.task = sender as? Task
-                
-            }
+        if segue.identifier == "selectTaskSegue" {
+            let nextVC = segue.destination as! CompleteTaskViewController
+            nextVC.task = sender as? Task
         }
-        
+    }
 }
